@@ -13,6 +13,6 @@
 
 
 ### Todo
-* More comments.
-* Have a smarter example for responsive images
+* Improve the detection of SW.
+* Create a smarter example for responsive images
 
