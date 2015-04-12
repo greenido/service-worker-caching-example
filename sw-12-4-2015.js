@@ -4,7 +4,7 @@
 // Date: April 2015
 //
 importScripts("serviceworker-cache-polyfill.js");
-this.version = 1.3;
+this.version = 1.4;
 
 console.log("I am a sw-12-4-2015.js ver:" + this.version +
             " - Ready to do the work");
@@ -14,7 +14,7 @@ var CACHE_NAME = 'sw-12-4-2015-cache-v' + this.version;
 
 // The files we want to cache
 var urlsToCache = [
-  'example-12-4-2015.html',
+  'index.html',
   'css/main12.css',
   'js/main12.js',
   'imgs/views1.jpg'
