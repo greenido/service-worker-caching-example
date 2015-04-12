@@ -7,11 +7,12 @@ body {
 
 h2 {
   background: red;
-  width: 22em;
-  padding-left: 3em;
+  width: 10em;
+  padding: 1em;
+  padding-left: 2em;
   border-radius: 2em;
 }
 
 img {
-  border-radius: 1em;
+  border-radius: 5em;
 }
