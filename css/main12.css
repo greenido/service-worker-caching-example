@@ -1,0 +1,12 @@
+/* main12.css */
+
+body {
+  background: lightyellow;
+}
+
+h2 {
+  background: red;
+  width: 22em;
+  padding-left: 3em;
+  border-radius: 2em;
+}

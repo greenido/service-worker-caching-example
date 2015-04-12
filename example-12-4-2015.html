@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />  
+    <meta name="author" content="Ido Green | greenido.wordpress.com | @greenido">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#db5945">
+    <title>ServiceWorker example for caching</title>
+
+    <link rel="stylesheet" href="css/main12.css" />
+
+  </head>
+  <body>
+    <h2>Testing Service Worker For Caching Pages</h2>
+    <h3>And working offline - v4.2</h3>
+    <p>
+      <h4>Check what is going on with: </h4>
+        <ul>
+          <li><b>chrome://serviceworker-internals/</b></li>
+          <li><b>chrome://inspect/#service-workers</b></li>
+        </ul>
+      </h4>
+      <img src="imgs/views1.jpg" alt="views">
+      <h3><a href="https://ido-green.appspot.com">Ido's Projects</a></h3>
+      <p>
+        Last Update: 12/4/2015
+        
+      </p>
+    </p>
+
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw-12-4-2015.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker 12-4-2015 registration successful with scope: ',    registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker 12-4-2015 registration failed: ', err);
+      });
+    }
+    else {
+      console.log("No ServiceWorker for you :(");
+    }
+    </script>
+
+
+  <script src="js/main12.js"></script>
+  </body>
+</html>
