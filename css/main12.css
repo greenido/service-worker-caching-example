@@ -11,3 +11,7 @@ h2 {
   padding-left: 3em;
   border-radius: 2em;
 }
+
+img {
+  border-radius: 1em;
+}
