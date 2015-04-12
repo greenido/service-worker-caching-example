@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
     var condition = navigator.onLine ? "online" : "offline";
 
     status.className = condition;
-    status.innerHTML = condition.toUpperCase();
+    status.innerHTML = condition.toUpperCase() + " Try to reload the page";
   }
 
   window.addEventListener('online',  updateOnlineStatus);
