@@ -4,7 +4,7 @@
 // Date: April 2015
 //
 importScripts("serviceworker-cache-polyfill.js");
-this.version = 4.3;
+this.version = 4.4;
 
 console.log("I am a sw-12-4-2015.js ver:" + this.version +
             " - Ready to do the work");
