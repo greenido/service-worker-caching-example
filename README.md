@@ -3,7 +3,7 @@
 
 ## How to try this example
 
-1. Load the page.
+1. Load the (page)[https://greenido.github.io/service-worker-caching-example/index.html]
 2. The 'Install' action will take place. Follow the links on the page (e.g chrome://serviceworker-internals/ ) to 'see' better what is going on.
 3. Reload the page with your devtools open.
 4. See the log messages.
