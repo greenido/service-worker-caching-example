@@ -2,6 +2,7 @@
 
 body {
   background: lightyellow;
+  padding-right: 2em;
 }
 
 h2 {
@@ -9,4 +10,8 @@ h2 {
   width: 22em;
   padding-left: 3em;
   border-radius: 2em;
+}
+
+img {
+  border-radius: 1em;
 }
