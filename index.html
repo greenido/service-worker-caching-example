@@ -1,46 +1,58 @@
 <html>
-  <head>
-    <meta charset="utf-8" />  
-    <meta name="author" content="Ido Green | greenido.wordpress.com | @greenido">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#db5945">
-    <title>ServiceWorker example for caching web apps and/or web sites</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Ido Green | greenido.wordpress.com | @greenido">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#db5945">
+  <title>ServiceWorker example for caching web apps and/or web sites</title>
 
-    <link rel="stylesheet" href="css/main12.css" />
+  <link rel="stylesheet" href="css/main12.css" />
 
-  </head>
-  <body>
-    <h2>Testing Service Worker For Caching Pages</h2>
-    <h3>And working offline - v4.4</h3>
-    <p>
-      <h4>Check what is going on with: </h4>
-        <ul>
-          <li><b>chrome://serviceworker-internals/</b></li>
-          <li><b>chrome://inspect/#service-workers</b></li>
-        </ul>
-      </h4>
+</head>
+<body>
+  <h2>Testing Service Worker For Caching Pages</h2>
+  <h3>And working offline - v4.4</h3>
+  <p>
+    <h4>Check what is going on with:</h4>
+    <ul>
+      <li> <b>chrome://serviceworker-internals/</b>
+      </li>
+      <li> <b>chrome://inspect/#service-workers</b>
+      </li>
+    </ul>
+  </h4>
 
-      <img src="imgs/views1.jpg" alt="views">
-      <hr>
+  <img src="imgs/views1.jpg" alt="views">
+  <hr>
 
-      <h3>How to work with this example</h3>
-      <ol>
-        <li> Load the <a href="https://greenido.github.io/service-worker-caching-example/index.html">page</a></li>
-        <li> The 'Install' action will take place. Follow the links on the page (e.g chrome://serviceworker-internals/ ) to 'see' better what is going on.</li>
-        <li> Reload the page with your devtools open.</li>
-        <li>See the log messages.</li>
-        <li> Make sure you don't have connection (kill the wifi etc').</li>
-        <li> Click on the 'Reload' button and *boom* you got a page that they Service work sent you with its Javascript, css and image.</li>
-        <li> You can take the code chagne the version number in the page and the serviceWorker and see how it will update itself. (!) Make sure to close all the open tabs/windows of the last version of your web app/site.</li>
-      </ol>
-      
-      <h3>For more checkout <a href="https://ido-green.appspot.com">Ido's Projects</a></h3>
-      <p>
-        Last Update: 12/4/2015
-      </p>
-    </p>
+  <h3>How to work with this example</h3>
+  <ol>
+    <li>
+      Load the
+      <a href="https://greenido.github.io/service-worker-caching-example/index.html">page</a>
+    </li>
+    <li>
+      The 'Install' action will take place. Follow the links on the page (e.g chrome://serviceworker-internals/ ) to 'see' better what is going on.
+    </li>
+    <li>Reload the page with your devtools open.</li>
+    <li>See the log messages.</li>
+    <li>Make sure you don't have connection (kill the wifi etc').</li>
+    <li>
+      Click on the 'Reload' button and *boom* you got a page that they Service work sent you with its Javascript, css and image.
+    </li>
+    <li>
+      You can take the code chagne the version number in the page and the serviceWorker and see how it will update itself. (!) Make sure to close all the open tabs/windows of the last version of your web app/site.
+    </li>
+  </ol>
 
-    <script>
+  <h3>
+    For more checkout
+    <a href="https://ido-green.appspot.com">Ido's Projects</a>
+  </h3>
+  <p>Last Update: 12/4/2015</p>
+</p>
+
+<script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw-12-4-2015.js').then(function(registration) {
         // Registration was successful
@@ -55,7 +67,6 @@
     }
     </script>
 
-
-  <script src="js/main12.js"></script>
-  </body>
+<script src="js/main12.js"></script>
+</body>
 </html>
