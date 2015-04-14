@@ -76,11 +76,30 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
-
-self.addEventListener('activate', function(e) {
-  console.log("sw-12-4-2015 have been activated");
+//
+// Let's clean the old cache
+//
+self.addEventListener('activate', function(event) {
+  console.log("sw-12-4-2015 have been activated. Cache name:" + CACHE_NAME);
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames.filter(function(cacheName) {
+          // Return true if you want to remove this cache,
+          // but remember that caches are shared across
+          // the whole origin
+        }).map(function(cacheName) {
+          console.log("Deleteing cache: " + cacheName);
+          return caches.delete(cacheName);
+        })
+      );
+    })
+  );
 });
- 
+
+//
+//
+//
 self.addEventListener('message', function(e) {
   var message = e.data;
   console.log("sw-12-4-2015 have just got the message:" + message);
