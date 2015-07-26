@@ -16,3 +16,5 @@
 * Improve the detection of SW.
 * Create a smarter example for responsive images
 
+
+[![Analytics](https://ga-beacon.appspot.com/UA-65622529-1/service-worker-caching-example/main)](https://github.com/igrigorik/ga-beacon)
